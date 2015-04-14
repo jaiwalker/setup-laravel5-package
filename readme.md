@@ -1,4 +1,4 @@
-## Laravel 5 package Development
+## Laravel 5 package Development from scratch 
 
 Trying to explain laravel 5 package development :+1:
  
