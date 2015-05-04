@@ -38,7 +38,7 @@ Trying to explain laravel 5 package development :+1:
   like this [file](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/src/Http/Controllers/ContactController.php)
 
    - creating Config :
-  in your /packages/jai/Contact/src/config and in it create file call contact.php
+   in your /packages/jai/Contact/src/config and in it create file call contact.php
    like this :[file](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/src/config/contact.php)
    
    NOTE : if  you want to access config - you need to publish first - after doing  step 5  you can run "php artisan  vendor:publish" this
@@ -47,25 +47,27 @@ Trying to explain laravel 5 package development :+1:
    - Creating Views :
    
    this is a bit different , 
-   in your jai/Contact folder crteate a new folder  call views    and  you can replicate these files.
+   in your jai/Contact folder create a new folder  call views    and  you can replicate these files.
    [file1](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/views/contact.blade.php)
    [file2](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/views/template.blade.php)
    
-  * step 3 : add package path in root composer.json
+  * Step 3 : add package path in root composer.json
   
   in your root composer.json  file "jai\\Contact\\": "packages/jai/Contact/src/" under psr-4
   
 ```
   "psr-4": {
   			"App\\": "app/",
-  		  	"iddigital\\Blog\\": "packages/iddigital/Blog/src/"
+            "Jai\\Contact\\": "packages/jai/contact/src/",
   		}
 ```  		
+Once you have added this - run composer dump-autoload
+
 * step 4 : add service provider  in app conifg.
 
   in  your root/conifg/app.php   under providers add your package service provider to hook your package in.
   ```
-	'Illuminate\Html\HtmlServiceProvider',
+    		'Jai\Contact\ContactServiceProvider',
 	```
 	
 * Step 5 : run  composer dump-autoload - make sure there are no errors.
