@@ -61,7 +61,7 @@ Trying to explain laravel 5 package development :+1:
             "Jai\\Contact\\": "packages/jai/contact/src/",
   		}
 ```  		
-Once you have added this - run composer dump-autoload
+
 
 * step 4 : add service provider  in app conifg.
 
