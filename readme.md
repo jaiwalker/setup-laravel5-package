@@ -27,12 +27,12 @@ Please look into this [file](https://github.com/jaiwalker/Develop-laravel5-packa
  
 *If you want you can write `dd("testing");` in the boot function and go to step 3, but if you have copied the service provider file you might want to create views, routes, config and controllers.*
   
-#### Creating : Routes
+#### Creating Routes
 
 In your `src` folder create a new `Http` folder in which you create your `routes.php` file.
 ([example file](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/src/Http/routes.php))
   
-#### Creating Controllers :
+#### Creating Controllers
 
 In your `Http` folder create a new directory called `Controllers`. In this folder you can create your controllers.
 ([example file](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/src/Http/Controllers/ContactController.php))
