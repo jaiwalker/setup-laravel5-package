@@ -39,7 +39,7 @@ In your `Http` folder create a new directory called `Controllers`. In this folde
 
 #### Creating Config
 
-In your `src` folder create a new directory and call it `config.In it create file (e.g. `contact.php`) like this [file](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/src/config/contact.php)
+In your `src` folder create a new directory and call it `config`. In it create a new file (e.g. `contact.php`) like this [file](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/src/config/contact.php)
    
 Note: if you want to access config - you need to publish first - after doing step 5 you can run `php artisan vendor:publish`. This will push you config file (contact.php => project/config/contact.php) and then you can access config.
    
