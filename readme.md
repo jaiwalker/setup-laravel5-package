@@ -1,6 +1,6 @@
 ## Laravel 5 package Development from scratch 
 
-Trying to explain Laravel specific package development in Laravel 5 :+1:
+Trying to explain Laravel specific package development in Laravel 5 :+1 :+1:
 
 With the new Laravel 5 - `php artisan workbench` is made redundant.
 And technically Laravel packages should not be tightly coupled with Laravel core, so that make sense.
