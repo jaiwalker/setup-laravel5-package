@@ -1,0 +1,20 @@
+{
+    "name": "jai/contact",
+    "description": "A simple Example to Create a Laravel test Package",
+    "license": "MTI",
+    "authors": [
+        {
+            "name": "Jai Kora",
+            "email": "kora.jayaram@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/testPackageCase.php"
+        ]
+    }
+}
