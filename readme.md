@@ -72,35 +72,40 @@ run `composer dump-autoload` - make sure there are no errors.
 
 all done - now you can access  your package via url - "yourwebsite/contact"
 
-## Update Included testing
+## Update Included Testing for Package.
 
-There are different ways you can write test  for  your package   Global test  which is writing test in Laravel app ( not in Package ) another way is to write tests in package its self , for Global its pretty straight, I will explain how to setup  Package  test case.
+There are different ways you can write test  for  your package   **Global test**  which is writing test in Laravel app ( not in Package ) another way is to **write tests in package its self** , for Global its pretty straight, **I will explain how to setup  Package  test case**.
 
-## Create a new  composer.json for  your package
-    - On command line navigate to package folder ("contact")  and run run `composer init` and follow the directions .
-    - Add  phpunit in  your created composer.json file and run `composer install`
+## Create a new  composer.json for  your package.
 
-    ```
-        "require-dev": {
+* On Command line navigate to package folder ("contact")  and run run `composer init` and follow the directions .
+* Add  phpunit in your created composer.json ( as shown Below)  file and run `composer install`
+```
+    "require-dev": {
                         "phpunit/phpunit": "4.8.*"
             }
-    ```
+```
+example : [composer.json](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/views/contact.blade.php)
 
-## Create a phpunit.xml file in your package dir ("Contact") similar to laravel's phpunit.xml  just  without bootstrap.
+## Create a phpunit.xml file
+In your package dir ("Contact") similar to laravel's phpunit.xml  just  without bootstrap.
 
+example : [phpunit.xml](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/views/contact.blade.php)
 
-## Create a dir "tests"  in your Package ( "Contact" )
+## Create a dir "tests"  in your Package ( "Contact" ).
+* Create common `TestPackageCase.php` which is very similar to `TestCase.php` file just with few path changes.
 
-    - Create common TestPackageCase.php which is very similar to TestCase.php file just with few path changes.
+* Create ContactTest.php  which extends `TestPackageCase.php` , now `TestPackageCase.php` is the  common extends files for all tests created in package this allows you create very similarly to laravel's test cases without any major changes.
 
-    - Create ContactTest.php  which extends TestPackageCase.php , now TestPackageCase.php is the  common extends files for all tests created in package this allows you create very similarly to laravel's test cases without any major changes.
+example : [TestPackageCase.php](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/views/contact.blade.php)
+
+example : [contactTest.php](https://github.com/jaiwalker/Develop-laravel5-package-/blob/master/packages/jai/Contact/views/contact.blade.php)
 
 ## Running tests.
 
 On command line Navigate to your package folder ("Contact")  and run  `../../../vendor/bin/phpunit` this should give you phpunit test case results.
 
+
+
 DO share this repository if you liked it.
-
-
-
 
