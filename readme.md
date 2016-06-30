@@ -72,10 +72,12 @@ run `composer dump-autoload` - make sure there are no errors.
 
 all done - now you can access  your package via url - "yourwebsite/contact"
 
+### Check out [Included test Branch](https://github.com/jaiwalker/setup-laravel5-package/tree/include-tests) for how we can Write test in Laravel Package.
+
 DO share this repository if you liked it.
 
 UPDATE : 
 
-working on  review  and  push Enchaments , will be released soon.
+[New Branch](https://github.com/jaiwalker/setup-laravel5-package/tree/include-tests) added :  Where Basic Tests are Included.
 
 
